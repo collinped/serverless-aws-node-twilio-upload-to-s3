@@ -1,0 +1,11 @@
+{
+  "body": {
+    "to": "123-456-7890",
+    "message": "Welcome to Serverless",
+    "numMedia": "2",
+    "mediaUrlType0": "jpg",
+    "mediaUrlType1": "jpg",
+    "mediaUrl0": "https://c1.staticflickr.com/3/2899/14341091933_1e92e62d12_b.jpg",
+    "mediaUrl1": "https://c1.staticflickr.com/3/2899/14341091933_1e92e62d12_b.jpg"
+  }
+}
