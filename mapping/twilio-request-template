@@ -1,0 +1,12 @@
+#set($httpPost = $input.path('$').split("&"))
+{
+"Signature": "$input.params('X-Twilio-Signature')",
+#foreach( $kvPair in $httpPost )
+ #set($kvTokenised = $kvPair.split("="))
+ #if( $kvTokenised.size() > 1 )
+   "$kvTokenised[0]" : "$kvTokenised[1]"#if( $foreach.hasNext ),#end
+ #else
+   "$kvTokenised[0]" : ""#if( $foreach.hasNext ),#end
+ #end
+#end
+}
